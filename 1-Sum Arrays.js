@@ -20,7 +20,24 @@
 // Advanced users may find this extremely easy and can easily write this in one line.
 
 // Sum Numbers
+/**
+ * Returns sum of numbers
+ * @param {number[]} numbers array of numbers
+ * @returns {number}
+ */
 function sum (numbers) {
   "use strict";
+  let sumTotal = 0;
 
+  // for (let index = 0; index < numbers.length; index++) {
+  //   sumTotal += numbers[index];
+  // }
+  // return sumTotal;
+
+  // attempt
+  return numbers.reduce(
+    (acc, curr) => acc + curr,
+      sumTotal
+  );
+  // return numbers.reduce((a, b) => a + b, 0);
 };
